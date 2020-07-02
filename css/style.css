@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(88, 87, 87) !important;
+    font-family: 'Markazi Text', serif !important;
+
+}
+
+.card-style {
+    width: 45rem;
+    background: url(../img/gettyimage.jpg) !important;
+    background-repeat: round !important;
+    text-align: right;
+    margin-bottom: 10px;
+    background-color: aqua !important;    
+}
+
+.opasty{
+    content: '';
+    background-color: #ffffff2b;
+    border: 4px solid;
+    opacity: 0.9;
+}
+
+h1 {
+    color: white !important;
+}
+h5{
+    /* color: black; */
+    color: #ffa200;
+}
+p{
+    color: black;
+}
+
+.my-info {
+    background: url('../img/Wavey-Fingerprint.svg');
+    padding-top: calc(3rem + 40px);
+    padding-bottom: 6rem;
+    margin-bottom: 10px;
+}
+
+.avatar-user {
+    width: 15rem;
+}
+
+#share-buttons img {
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    width: 35px;
+}
+
+
+.fa-whatsapp {
+    padding-top: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #25d366;
+}
+
+.pbone {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    margin-left: 25px;
+}
+
+.fa-phone {
+    padding-top: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #25d366;
+}
+
+.card-text,
+.card-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 2rem;
+}
+
+.card-text img {
+    width: 2rem;
+    margin-left: 10px;
+
+}
+
+
+
+.card-body {
+    counter-reset: count;
+}
+
+.card-text {
+    position: relative;
+    margin-right: 70px;
+}
+
+.card-text::before {
+    counter-increment: count;
+    content: counter(count);
+    position: absolute;
+    right: -1.8em;
+    top: .2em;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid rgb(0 0 0);
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffa200;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .card-text,
+    .card-title {
+        font-family: 'Markazi Text', serif;
+        font-size: 1rem;
+    }
+
+    .card-text {
+        position: relative;
+        margin-right: 25px;
+    }
+
+    .card-text::before {
+        counter-increment: count;
+        content: counter(count);
+        position: absolute;
+        right: -1.8em;
+        top: .122em;
+        background: #fff;
+        border-radius: 950%;
+        width: 1.2em;
+        height: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffa200;
+    }
+
+}
